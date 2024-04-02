@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#2EA1D5">
+
+    <!-- Existing TextView, EditText, and Button for the game -->
+    <TextView
+        android:id="@+id/instructionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 ile 100 arasında bir sayı giriniz."
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/guessEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/instructionTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/guessButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tahmin Et"
+        android:layout_below="@id/guessEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#C53E6B"/>
+
+    <!-- Tekrar Oyna Button -->
+    <Button
+        android:id="@+id/playAgainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tekrar Başlayın"
+        android:background="#E6A443"
+        android:layout_below="@id/resultTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/hakki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kalan tahmin hakkiniz 6"
+        android:textSize="20dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="100dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:layout_below="@id/guessButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
